@@ -1,0 +1,27 @@
+ 🛩Import costume
+
+import androidx.core.widget.NestedScrollView;
+
+import android.app.ActionBar.LayoutParams;
+
+import me.everything.android.ui.overscroll.*;
+
+import me.everything.android.ui.overscroll.adapters.*; 
+ 
+🛩 Code on bind grid view 
+
+((ViewGroup) image.getParent()).removeView(image);
+((ViewGroup) foreground.getParent()).removeView(foreground);
+android.widget.RelativeLayout rl = new android.widget.RelativeLayout(MainActivity.this);
+
+rl.setLayoutParams(new LinearLayout.LayoutParams(-1,-1));
+
+main_holder.removeAllViews();
+
+main_holder.addView(rl);
+
+rl.addView(image);
+
+rl.addView(foreground);
+
+
